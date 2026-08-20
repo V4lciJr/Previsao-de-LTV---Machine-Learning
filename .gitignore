@@ -1,0 +1,14 @@
+# artefatos gerados pelos scripts
+prep_ltv.joblib
+resultados_validacao_cruzada.csv
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# sistema
+.DS_Store
+Thumbs.db
