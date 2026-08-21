@@ -3,19 +3,6 @@ Projeto Hashtag Lifetime Value — CRISP-DM
 =========================================
 Fase 3 — Preparação dos dados para a modelagem.
 
-Este módulo é a ÚNICA fonte de verdade do pré-processamento. Ele é feito para
-ser importado por outros scripts (ex.: `modelagem.py`), expondo diretamente:
-
-    from preparacao_modelagem import (
-        X_train, X_test, y_train, y_test,   # conjuntos já separados
-        preprocessador,                     # ColumnTransformer NÃO ajustado
-        pipeline_prep,                      # Pipeline com o pré-processador
-        RANDOM_STATE, ALVO,                 # constantes do projeto
-    )
-
-Executado diretamente (`python preparacao_modelagem.py`) ele imprime o
-relatório completo da preparação e salva os artefatos em `prep_ltv.joblib`.
-
 Entrada: ltv_base_tratada.csv — base já tratada nas etapas anteriores
          (deduplicada por ID, sem as colunas ID e Renda, tipos corrigidos,
          cardinalidade reduzida e data convertida em mes_compra /
